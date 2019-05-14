@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100%;
+  background-color: #000;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;  
+}
+
+header {
+  padding: 16px;
+}
+
+ul>li {
+  list-style: none;
+  float: left;
+  border-bottom: 3px solid transparent;
+  padding: 5px 0 5px 0;
+  margin-right: 32px;
+  
+}
+
+ul>li a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #B7B7B7;
+}
+ul>li:hover {
+  border-bottom: 3px solid #DF6567;
+}
+.topNav {
+  float: right
+}
+
+.logo {
+  float: left;
+  height: 67px;
+  line-height: 60px;
+}
+
+.rs, .card {
+  font-size: 24px;
+  font-family: "Arial Black"
+}
+.rs{
+  color: #E6686A;
+}
+
+.card {
+  color: #B7B7B7;
+}
