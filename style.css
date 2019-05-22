@@ -30,7 +30,7 @@ header {
   width: 100%;
 }
 
-ul>li {
+.topNav ul>li {
   list-style: none;
   float: left;
   border-bottom: 3px solid transparent;
@@ -39,12 +39,12 @@ ul>li {
   
 }
 
-ul>li a {
+.topNav ul>li a {
   font-size: 12px;
   font-weight: 700;
   color: #B7B7B7;
 }
-ul>li:hover {
+.topNav ul>li:hover {
   border-bottom: 3px solid #DF6567;
 }
 .topNav {
@@ -88,10 +88,9 @@ ul>li:hover {
   box-sizing: border-box;
   width: 940px;
   background-color: #fff;
-  position: absolute;
-  top: -300px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: -300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .user-content {
@@ -175,8 +174,142 @@ span.name {
   width: 40px;
   height: 40px;
   fill: #fff;
-<<<<<<< HEAD
 }
-=======
+
+.download-pdf {
+  text-align: center;
 }
->>>>>>> 940ef457efeccfbb4a4c306a799d8c2957e20a67
+
+.btn-download {
+  display: inline-block;
+  padding: 20px 40px;
+  border: 1px solid #cdcfd1;
+  background-color: #efefef;
+  margin-top: 30px;
+  color: #000;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+
+.btn-download:hover { 
+  box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.2)
+}
+
+.introduce {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.skills {
+  width: 940px;
+  margin: 50px auto;
+}
+
+.skills h2 {
+  text-align: center;
+}
+
+.skills ul {
+  background-color: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}
+
+.skills li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.skills li:nth-child(odd) {
+  float: left;
+  width: 48%;
+}
+
+.skills li:nth-child(even) {
+  float: right;
+  width: 48%;
+}
+
+.skills h3 {
+  font-size: 14px;
+}
+
+.skills .progress {
+  height: 6px;
+  background-color: #FAE1E1;
+  border-radius: 3px;
+}
+
+.skills .progress .value {
+  height: 100%;
+  width: 40%;
+  background-color: #E6686A;
+  border-radius: 3px;
+}
+
+.production {
+  width: 940px;
+  margin: 0 auto 200px auto;
+  text-align: center;
+}
+
+.production ul {
+  width: 270px;
+  margin: 0 auto 5px auto;
+}
+.production ul>li {
+  list-style: none;
+  float: left;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.production .progress {
+  width: 260px;
+  margin: 0 auto;
+  height: 6px;
+  background-color: #fff;
+}
+
+.production .progress .value1 {
+  background-color: #E6686A;
+  width: 26%;
+  height: 100%;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+}
+
+.production .progress .value2 {
+  background-color: #E6686A;
+  width: 29%;
+  margin-left: 26%;
+  height: 100%;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+}
+
+.production .progress .value3 {
+  background-color: #E6686A;
+  width: 45%;
+  margin-left: 55%;
+  height: 100%;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+}
+
+.production .display {
+  display: grid;
+  width: 940px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  grid-template-columns: 606px 293px;
+  grid-template-rows: 285px 285px;
+  grid-gap: 27px 41px;
+  margin-top: 60px;
+}
+
+.production .jpg1 {
+  grid-row: 1 / 3;
+}
+

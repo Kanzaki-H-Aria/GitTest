@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Harlan的个人简历</title>
     <link rel="styleSheet" href="style.css" />
     <script src="//at.alicdn.com/t/font_1199224_pg0zs8ddas8.js"></script>
   </head>
@@ -32,7 +32,7 @@
       <div class="mark"></div>
     </div>
     <main>
-      <div class="user">
+      <div class="user ">
         <div class="user-card ">
           <div class="user-content clearfix">
             <div class="avatar">
@@ -82,6 +82,83 @@
           </footer>
         </div>
       </div>
+      <div class="download-pdf">
+        <a href="#" class="btn-download">下载简历</a>
+      </div>
+      <div class="introduce">
+        <p>Harlan, 前端工程师,目前在一家普通软件公司担任前端开发的职位</p>
+      </div>
+      <section class="skills">
+        <h2>技能</h2>
+        <ul class="clearfix">
+          <li>
+            <h3>Node.js</h3>
+            <div class="progress">
+              <div class="value"></div>
+            </div>
+          </li>
+          <li>
+            <h3>HTML 5 & CSS 3</h3>
+            <div class="progress">
+              <div class="value"></div>
+            </div>
+          </li>
+          <li>
+            <h3>JavaScript</h3>
+            <div class="progress">
+              <div class="value"></div>
+            </div>
+          </li>
+          <li>
+            <h3>jQuery</h3>
+            <div class="progress">
+              <div class="value"></div>
+            </div>
+          </li>
+          <li>
+            <h3>Vue.js</h3>
+            <div class="progress">
+              <div class="value"></div>
+            </div>
+          </li>
+          <li>
+            <h3>React.js</h3>
+            <div class="progress">
+              <div class="value"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="production">
+        <h2>作品集</h2>
+        <ul class="clearfix">
+          <li id="all">所有</li>
+          <li id="frame">框架</li>
+          <li id="native">原生js&css</li>
+        </ul>
+        <div class="progress">
+          <div class="value1"></div>
+        </div>
+        <div class="display">
+          <img class="jpg1" src="1.jpg" alt="">
+          <img class="jpg2" src="2.jpg" alt="">
+          <img class="jpg2" src="3.jpg" alt="">
+        </div>
+      </section>
     </main>
+    <script>
+      document.querySelector('#all').onclick = () => {
+        document.querySelector('.production .progress div').className = 'value1'
+      }
+
+      document.querySelector('#frame').onclick = () => {
+        document.querySelector('.production .progress div').className = 'value2'
+      }
+
+      document.querySelector('#native').onclick = () => {
+        document.querySelector('.production .progress div').className = 'value3'
+      }
+    
+    </script>
   </body>
 </html>
